@@ -1,0 +1,264 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background-color: #f0f4ff;
+      color: #222;
+    }
+
+    /* ── Botão voltar ao topo ── */
+    #topo {
+      position: absolute;
+      top: 0;
+    }
+
+    .voltar-topo {
+      display: block;
+      text-align: center;
+      margin: 1rem auto 0;
+      width: fit-content;
+      color: #4f46e5;
+      text-decoration: none;
+      font-size: 13px;
+      padding: 4px 16px;
+      border: 1px solid #c7d2fe;
+      border-radius: 999px;
+      background-color: white;
+    }
+
+    .voltar-topo:hover {
+      background-color: #e0e7ff;
+    }
+
+    /* ── Header ── */
+    header {
+      background-color: #4f46e5;
+      color: white;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    header p {
+      font-size: 14px;
+      opacity: 0.85;
+    }
+
+    nav {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 4px 16px;
+      border: 1px solid rgba(255,255,255,0.5);
+      border-radius: 999px;
+      font-size: 13px;
+    }
+
+    nav a:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    /* ── Layout principal ── */
+    main {
+      max-width: 640px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    /* ── Card base ── */
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      border: 1px solid #ddd;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #a5b4fc;
+    }
+
+    .card h2 {
+      color: #4f46e5;
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* ── Sobre mim ── */
+    figure {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    figure img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #e0e7ff;
+    }
+
+    figcaption {
+      font-size: 12px;
+      color: #888;
+      margin-top: 4px;
+    }
+
+    p.bio {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    /* ── Tags (hobbies e habilidades) ── */
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      list-style: none;
+    }
+
+    .tag-list li {
+      padding: 4px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+    }
+
+    .tag-list li:hover {
+      filter: brightness(0.93);
+    }
+
+    .tag-roxo { background-color: #e0e7ff; color: #4f46e5; }
+    .tag-verde { background-color: #d1fae5; color: #065f46; }
+    .tag-rosa { background-color: #fce7f3; color: #9d174d; }
+    .tag-azul { background-color: #b1edff; color: #105791; }
+
+    /* ── Linha do tempo ── */
+    .timeline {
+      list-style: none;
+      padding-left: 1rem;
+      border-left: 2px solid #c7d2fe;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .timeline li {
+      position: relative;
+      padding-left: 1rem;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .timeline li::before {
+      content: '';
+      position: absolute;
+      left: -1.45rem;
+      top: 5px;
+      width: 10px;
+      height: 10px;
+      background-color: #4f46e5;
+      border-radius: 50%;
+      border: 2px solid white;
+    }
+
+    .timeline .ano {
+      font-size: 12px;
+      color: #4f46e5;
+      font-weight: 500;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .timeline strong {
+      font-weight: 500;
+      color: #222;
+    }
+
+    /* ── Contato ── */
+    .contato-lista {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contato-lista li a {
+      text-decoration: none;
+      color: #4f46e5;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .contato-lista li a:hover {
+      text-decoration: underline;
+    }
+
+    .icone-contato {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: #e0e7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #4f46e5;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 12px;
+      color: #888;
+      border-top: 1px solid #ddd;
+      margin-top: 1rem;
+    }
+
+  /* Responsividade */
+  @media (max-width: 480px) {
+
+    header h1 {
+      font-size: 22px;
+    }
+
+    nav a {
+      font-size: 12px;
+      padding: 4px 10px;
+    }
+
+    figure {
+      flex-direction: column;
+    }
+
+    .contato-lista li a {
+      word-break: break-all;
+    }
+
+}
